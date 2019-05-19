@@ -130,6 +130,15 @@
 			style="view_friends"
 			textAlignment=east
 		}
+		
+		EOLAlert
+		{
+			ControlName=Button
+			labelText="#Steam_EOLAlert"
+			style="support_alert"
+			textAlignment=center
+			command="OpenEOLAlertWindow"
+		}
 	}
 
 	styles
@@ -162,6 +171,17 @@
 		}
 		
 		announcement_button:hover
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, none )"
+				1="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification_hover )"
+			}
+			
+		}
+		
+		RootMenu
 		{
 			render_bg
 			{
